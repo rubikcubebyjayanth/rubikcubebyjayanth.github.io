@@ -1,0 +1,51 @@
+@import url(fonts/clear-sans.css);
+
+html, body{
+background:#222233;
+margin: 0;
+padding: 0;
+color: #aaaaaa;
+font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+}
+
+body {
+    margin: 30px 0;
+}
+
+.container {
+    width: 480px;
+    margin: 0 auto;
+}
+
+.mobile-notice {
+    position: relative;
+
+    color: white;
+    padding: 8px;
+    height: 56px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    opacity: 0.5;
+}
+
+.rubik-simulator {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.65; 
+  }
+  
+  .centerimage {
+    height: 100%;
+}
+
+  .rightimage {
+    height: 100%;
+    text-align: right;
+    float: right;
+}
