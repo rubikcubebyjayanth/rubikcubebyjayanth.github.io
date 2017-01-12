@@ -1,0 +1,17 @@
+<?php
+require_once 'IP2Location.php';
+
+$loc = new IP2Location('databases/IP-COUNTRY.BIN', IP2Location::FILE_IO);
+$record = $loc->lookup($_SERVER['REMOTE_ADDR'], IP2Location::ALL);
+
+if($record == 'GB') {
+	header('HTTP/1.1 301 Moved Permanently');
+	header('Location: https://www.amazon.co.uk/gp/search/ref=as_li_qf_sp_sr_il_tl?ie=UTF8&camp=1634&creative=6738&index=aps&keywords=Rubik%20Cube&linkCode=as2&tag=rubcub-21');
+	exit;
+}
+if($record == 'IN') {
+	header('HTTP/1.1 301 Moved Permanently');
+	header('Location: http://www.amazon.in/Funskool-Rubiks-7035100-Funskool-Rubiks-Cube/dp/B00EPDY59A?_encoding=UTF8&camp=3638&creative=24630&creativeASIN=B00EPDY59A&linkCode=as2&linkId=56a87a6a2b785085d81b16ce21b36e11&redirect=true&ref_=as_li_tl&tag=jayanthgurija-21');
+	exit;
+}
+?>
